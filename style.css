@@ -13,7 +13,7 @@ body{
 
 .main-left{
     width: 30%;
-    background: no-repeat 40% 70%/cover url(/kaisa1.png);
+    background: no-repeat 40% 70%/cover url(kaisa1.png);
 
     display: flex;
     flex-direction: column;
