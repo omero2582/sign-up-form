@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-left">
+        <p class="caption">Kaisa from <a target="_blank" href="https://www.youtube.com/watch?v=hjPS3j5XNss">
+            League of Legends</a></p>
+    </div>
+    <div class="main-right">
+        <section class="header-message">
+            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepes dreams. <br>Sign up now to get started</h1>
+            <h1>You <em>know</em> you want to.</h1>
+        </section>
+
+        <form action="http://httpbin.org/post" method="post">
+            <section class="form-main">
+                <h2>Let's do this!</h2>
+                <section class="form-fields">
+                    <p>
+                        <label for="first-name">FIRST NAME *</label>
+                        <input type="text" id="first-name" name="first-name" required placeholder=" ">
+                    </p>
+                    <p>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </p>
+                    <p>
+                        <label for="email">EMAIL *</label>
+                        <input type="email" name="email" id="email" required placeholder=" ">
+                    </p>
+                    <p>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number">
+                    </p>
+                    <p>
+                        <label for="password">PASSWORD *</label>
+                        <input type="password" name="password" id="password" required placeholder=" ">
+                    </p>
+                    <p>
+                        <label for="confirm-password">CONFIRM PASSWORD *</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required placeholder=" ">
+                        <span class="required-txt">Passwords dont match*</span>
+                
+                    </p>
+                </section>
+            </section>
+            <section class="form-cta">
+                <button>Create Account</button>
+                <p>Already have an account? Log in</p>
+            </section>
+        </form>
+    </div>
+</body>
+</html>

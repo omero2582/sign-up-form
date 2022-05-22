@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.main-left{
+    width: 30%;
+    background: no-repeat 40% 70%/cover url(/kaisa1.png);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  /*for footer text*/
+}
+
+.main-left .caption{
+    background-color: hsl(0, 0%, 0%, 50%);
+    color: antiquewhite;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    padding:  15px 0px;
+}
+
+.main-left{
+    color: hsl(0, 0%, 79%)
+}
+
+.main-left a{
+    color: hsl(63, 96%, 63%)
+}
+
+.main-right{
+    width: 70%;
+    background-color:antiquewhite;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-message{
+    margin: 0 auto;
+    width: 65%;
+    font-size: 0.70rem;
+}
+
+.form-main{
+    /* background-color:hsl(0, 0%, 66%); */
+    background-color:hsl(0, 0%, 79%);
+}
+
+.form-main > h2{
+    padding-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.4rem;
+    margin-left: 3.5%;
+}
+
+.form-fields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: max(20px, 15%);
+    overflow: hidden;
+    /* background-color:darkgray; */
+}
+
+.form-fields > p{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+p > label{
+    font-size: 0.85rem;
+}
+
+.required-txt{
+    font-size: 0.86rem;
+    color: red;
+}
+.form-cta{
+    margin: 1.5rem;
+}
+
+.form-cta > button{
+    padding: 1rem 1.5rem;
+    border: 1.5px solid black;
+    border-radius: 5%;
+    background-color:hsl(269, 76%, 38%);
+    /* hsl(275, 64%, 37%); */
+    color: white;
+}
+.form-cta > button:hover{
+    background-color: hsl(269, 76%, 52%);
+    cursor: pointer;
+}
+
+input:focus{
+    
+    border: 3px solid hsl(240, 96%, 67%);
+}
+input:not(:placeholder-shown):invalid, .not-valid{
+    border: 2.5px solid red;
+}
+
+button{
+    font-family: inherit;
+    font-size: 90%;
+}
+
+.required-txt{
+    visibility: hidden;
+}
